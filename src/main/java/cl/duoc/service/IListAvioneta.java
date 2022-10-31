@@ -1,18 +1,18 @@
-package cl.duoc.service.app;
+package cl.duoc.service;
 
 import cl.duoc.models.Avioneta;
 
 public interface IListAvioneta {
     
-    public void MostrarTodo();
+    public void Listar();
     
-    public void Buscar(int indice);
+    public void Listar(int indice);
     
     public void Guardar(Avioneta avioneta);
     
     public void Reemplazar(int indice,Avioneta avioneta);
     
-    public void EliminarIndice(int indice);
+    public void Eliminar(int indice);
     
-    public void EliminarElemento(Avioneta avioneta);
+    public void Eliminar(Avioneta avioneta);
 }

@@ -1,7 +1,7 @@
-package cl.duoc.service.app.Implements;
+package cl.duoc.service.app;
 
 import cl.duoc.models.Avioneta;
-import cl.duoc.service.app.IListAvioneta;
+import cl.duoc.service.IListAvioneta;
 import java.util.ArrayList;
 
 public class ListarAvioneta implements IListAvioneta{
@@ -12,12 +12,12 @@ public class ListarAvioneta implements IListAvioneta{
     }
     
     @Override
-    public void MostrarTodo(){
+    public void Listar(){
         System.out.println(ListaAvioneta);
     }
     
     @Override
-    public void Buscar(int indice){
+    public void Listar(int indice){
         System.out.println(ListaAvioneta.get(indice));
     }
     
@@ -32,12 +32,12 @@ public class ListarAvioneta implements IListAvioneta{
     }
     
     @Override
-    public void EliminarIndice(int indice){
+    public void Eliminar(int indice){
         ListaAvioneta.remove(indice);
     }
     
     @Override
-    public void EliminarElemento(Avioneta avioneta){
+    public void Eliminar(Avioneta avioneta){
         ListaAvioneta.remove(avioneta);
     }
 }

@@ -3,7 +3,6 @@ package cl.duoc.service;
 import org.junit.Test;
 
 import cl.duoc.service.IList;
-import cl.duoc.service.app.*;
 import cl.duoc.models.*;
 
 public class ListasTest {

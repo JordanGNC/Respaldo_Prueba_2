@@ -1,18 +1,18 @@
-package cl.duoc.service.app;
+package cl.duoc.service;
 
 import cl.duoc.models.Carguero;
 
 public interface IListCarguero {
     
-    public void MostrarTodo();
+    public void Listar();
     
-    public void Buscar(int indice);
+    public void Listar(int indice);
     
     public void Guardar(Carguero carguero);
     
     public void Reemplazar(int indice,Carguero carguero);
     
-    public void EliminarIndice(int indice);
+    public void Eliminar(int indice);
     
-    public void EliminarElemento(Carguero carguero);
+    public void Eliminar(Carguero carguero);
 }

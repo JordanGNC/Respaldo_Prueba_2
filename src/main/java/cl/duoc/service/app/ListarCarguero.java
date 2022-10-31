@@ -1,7 +1,7 @@
-package cl.duoc.service.app.Implements;
+package cl.duoc.service.app;
 
 import cl.duoc.models.Carguero;
-import cl.duoc.service.app.IListCarguero;
+import cl.duoc.service.IListCarguero;
 import java.util.ArrayList;
 
 public class ListarCarguero implements IListCarguero{
@@ -12,12 +12,12 @@ public class ListarCarguero implements IListCarguero{
     }
     
     @Override
-    public void MostrarTodo(){
+    public void Listar(){
         System.out.println(ListaCarguero);
     }
     
     @Override
-    public void Buscar(int indice){
+    public void Listar(int indice){
         System.out.println(ListaCarguero.get(indice));
     }
     
@@ -32,12 +32,12 @@ public class ListarCarguero implements IListCarguero{
     }
     
     @Override
-    public void EliminarIndice(int indice){
+    public void Eliminar(int indice){
         ListaCarguero.remove(indice);
     }
     
     @Override
-    public void EliminarElemento(Carguero carguero){
+    public void Eliminar(Carguero carguero){
         ListaCarguero.remove(carguero);
     }
 }
