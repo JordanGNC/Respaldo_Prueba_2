@@ -1,26 +1,26 @@
 package cl.duoc.models;
 
+import java.time.LocalDate;
+
 public class VehiculoAereo {
     private int ID;
     private String Nombre;
     private int HorasVoladas;
     private boolean ListoParaVolar;
-    private String FechaUltimoVuelo;
+    private LocalDate FechaUltimoVuelo;
     
     public VehiculoAereo(){
         this.ID = 0;
         this.Nombre = "";
         this.HorasVoladas = 0;
         this.ListoParaVolar = false;
-        this.FechaUltimoVuelo = "";
     }
     
-    public VehiculoAereo(int ID, String Nombre, int HorasVoladas, boolean ListoParaVolar, String FechaUltimoVuelo) {
+    public VehiculoAereo(int ID, String Nombre, int HorasVoladas, boolean ListoParaVolar, LocalDate FechaUltimoVuelo) {
         this.ID = ID;
         this.Nombre = Nombre;
         this.HorasVoladas = HorasVoladas;
         this.ListoParaVolar = ListoParaVolar;
-        this.FechaUltimoVuelo = FechaUltimoVuelo;
     }
     
     public int getID() {
@@ -55,11 +55,11 @@ public class VehiculoAereo {
         this.ListoParaVolar = ListoParaVolar;
     }
 
-    public String getFechaUltimoVuelo() {
+    public LocalDate getFechaUltimoVuelo() {
         return FechaUltimoVuelo;
     }
 
-    public void setFechaUltimoVuelo(String FechaUltimoVuelo) {
+    public void setFechaUltimoVuelo(LocalDate FechaUltimoVuelo) {
         this.FechaUltimoVuelo = FechaUltimoVuelo;
     }
     
