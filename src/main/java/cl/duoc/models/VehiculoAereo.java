@@ -7,13 +7,14 @@ public class VehiculoAereo {
     private String Nombre;
     private int HorasVoladas;
     private boolean ListoParaVolar;
-    private LocalDate FechaUltimoVuelo;
+    LocalDate FechaUltimoVuelo;
     
     public VehiculoAereo(){
         this.ID = 0;
         this.Nombre = "";
         this.HorasVoladas = 0;
         this.ListoParaVolar = false;
+        this.FechaUltimoVuelo = LocalDate.now();
     }
     
     public VehiculoAereo(int ID, String Nombre, int HorasVoladas, boolean ListoParaVolar, LocalDate FechaUltimoVuelo) {
@@ -21,6 +22,7 @@ public class VehiculoAereo {
         this.Nombre = Nombre;
         this.HorasVoladas = HorasVoladas;
         this.ListoParaVolar = ListoParaVolar;
+        this.FechaUltimoVuelo = FechaUltimoVuelo;
     }
     
     public int getID() {
@@ -62,6 +64,7 @@ public class VehiculoAereo {
     public void setFechaUltimoVuelo(LocalDate FechaUltimoVuelo) {
         this.FechaUltimoVuelo = FechaUltimoVuelo;
     }
+    
     
     
 }
